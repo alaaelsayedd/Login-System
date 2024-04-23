@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="container  mt-4 text-center p-5">
+      <div class="shadow-cont p-5 mx-auto w-75 ">
+        <h1 class="my-4 fs-1">Smart Login System</h1>
+        <div class="mb-3 text-white">
+            <input
+              type="text"
+              class="form-control"
+              id="signup-name"
+              placeholder="Enter your Name"
+              onsubmit="validateInput(this, nameRegex)"
+            />
+            <p class="failed text-danger fs-6 my-2 d-none text-start" >please Enter Availd Name</p>
+          </div>
+        <div class="mb-3 text-white">
+          <input
+            type="email"
+            class="form-control"
+            id="signup-email"
+            placeholder="Enter your Email"
+            onsubmit="validateInput(this, emailRegex)"
+          />
+          <p class="failed text-danger fs-6 my-2 d-none text-start">please Enter Availd Email</p>
+        </div>
+        <div class="mb-3 text-white">
+          <input
+            type="password"
+            class="form-control"
+            id="signup-password"
+            placeholder="Enter your password"
+            onsubmit="validateInput(this,passRegex)"
+           
+          />
+          <p class="failed text-danger fs-6 my-2 d-none text-start " > please Enter Password must contain one digit from 1 to 9, one lowercase letter, one uppercase letter, and one underscore, and it must be 6-16 characters long. </p>
+        </div>
+        <p class="succes text-success fs-5 my-2 d-none " id="sucess">Success</p>
+        
+          <div>
+            <button class="w-100 my-3 p-2 " id="signup" onclick="signup()">Sign Up</button>
+            <p class="text-white"> You have an account? <a href="./index.html" class="text-white text-decoration-none">Signin</a></p>
+          </div>
+
+        
+      </div>
+    </div>
+    <script src="./script/bootstrap.bundle.min.js"></script>
+    <script src="./script/main.js"></script>
+  </body>
+</html>

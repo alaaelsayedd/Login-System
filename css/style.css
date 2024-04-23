@@ -1,0 +1,53 @@
+body{
+    background-color: #24353f;
+}
+h1{
+    color: #17a2b8;
+}
+
+
+::placeholder { 
+   color:   rgba(255, 255, 255, 0.74)!important;
+}
+.form-control {
+    border: .5px solid rgba(255, 255, 255, 0.74);
+    background-color: transparent;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.form-control:focus {
+    border-color:#17a2b8; 
+    box-shadow: none;
+    background-color: #24353f;
+    color: whitesmoke;
+
+}
+button{
+    color: #17a2b8;
+    border: .5px solid #17a2b8;
+    transition: .05s all;
+    background-color: transparent;
+    border-radius: 3px;
+
+}
+button:hover{
+    color: white;
+    background-color: #17a2b8;
+    
+}
+
+.shadow-cont{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.61);
+
+}
+
+a:hover{
+    text-decoration: underline !important;
+}
+p.failed{
+    font-size: 10px;
+}
+nav a:hover{
+    text-decoration: none !important;
+}
